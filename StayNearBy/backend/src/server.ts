@@ -40,4 +40,6 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/staynearb
 
 app.listen(Number(PORT), '0.0.0.0', () => {
   console.log(`✅ Server running on port ${PORT}`);
+  console.log(`🌐 Local: http://localhost:${PORT}`);
+  console.log(`🔗 Health check: http://localhost:${PORT}/api/health`);
 });

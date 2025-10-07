@@ -36,8 +36,6 @@ export const createAdminUser = async (): Promise<void> => {
 };
 
 
-
-
 export const signup = async (req: AuthRequest, res: Response): Promise<void> => {
   try {
     const { name, email, password, role = UserRole.CUSTOMER } = req.body;
